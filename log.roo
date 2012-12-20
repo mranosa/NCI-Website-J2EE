@@ -1,0 +1,10 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2012-12-18 15:48:01
+project --topLevelPackage com.nci --packaging POM
+module create --moduleName core --topLevelPackage ~.core
+module focus --moduleName ~
+module create --moduleName web --topLevelPackage ~.web --packaging WAR
+module focus --moduleName ~
+perform eclipse
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2012-12-18 15:52:32
+module focus --moduleName web 
+perform eclipse

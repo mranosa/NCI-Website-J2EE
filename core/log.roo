@@ -1,0 +1,19 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2012-12-18 15:57:44
+mongo setup --cloudFoundry true
+entity mongo --class ~.domain.User --testAutomatically
+entity mongo --class ~.domain.Report --testAutomatically
+focus --class ~.domain.User
+field string --fieldName userName
+field string --fieldName password
+field string --fieldName email
+field string --fieldName firstName
+field string --fieldName lastName
+focus --class ~.domain.Report
+field string --fieldName foo
+repository mongo --interface ~.repository.UserRepository --entity ~.domain.User
+repository mongo --interface ~.repository.ReportRepository --entity ~.domain.Report
+service --interface ~.service.UserService --entity ~.domain.User
+service --interface ~.service.ReportService --entity ~.domain.Report
+q
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2012-12-18 16:04:01
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-12-18 16:33:54
