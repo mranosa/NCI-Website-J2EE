@@ -7,41 +7,42 @@
         <head>
         	<meta charset="utf-8">
         	
-            <title>Layout Example</title>
+            <title>National Convergence Initiatove</title>
 
-            <link rel="stylesheet" href="css/bootstrap.min.css"/>
-            <link rel="stylesheet" href="css/font-awesome.css"/>
-            <link rel="stylesheet" href="css/main.css"/>
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+            <link rel="stylesheet" type="text/css" href="css/wide.css" id="layout">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="css/colors/default.css" id="colors">
+            <link rel="stylesheet" type="text/css" href="css/switcher.css">
+            <link rel="stylesheet" type="text/css" href="css/main.css">
 
-            <script src="scripts/jquery/jquery.js"></script>
+            <script src="js/jquery.js"></script>
 
         </head>
         <body data-spy="scroll" data-target=".bs-docs-sidebar">
-            <stripes:layout-component name="header">
-                <jsp:include page="_header.jsp"/>
-            </stripes:layout-component>
+            <div id="wrapper" class="container-fluid">
+                <stripes:layout-component name="header">
+                    <jsp:include page="_header.jsp"/>
+                </stripes:layout-component>
 
-            <div class="pageContent">
-				<stripes:layout-component name="contents"/>
+                <div class="pageContent">
+                    <stripes:layout-component name="contents"/>
+                </div>
             </div>
 
-            <stripes:layout-component name="footer">
-                <jsp:include page="_footer.jsp"/>
-            </stripes:layout-component>
+                <stripes:layout-component name="footer">
+                    <jsp:include page="_footer.jsp"/>
+                </stripes:layout-component>
 
-            <script src="scripts/bootstrap/bootstrap-affix.js"></script>
-            <script src="scripts/bootstrap/bootstrap-alert.js"></script>
-            <script src="scripts/bootstrap/bootstrap-dropdown.js"></script>
-            <script src="scripts/bootstrap/bootstrap-tooltip.js"></script>
-            <script src="scripts/bootstrap/bootstrap-modal.js"></script>
-            <script src="scripts/bootstrap/bootstrap-transition.js"></script>
-            <script src="scripts/bootstrap/bootstrap-button.js"></script>
-            <script src="scripts/bootstrap/bootstrap-popover.js"></script>
-            <script src="scripts/bootstrap/bootstrap-typeahead.js"></script>
-            <script src="scripts/bootstrap/bootstrap-carousel.js"></script>
-            <script src="scripts/bootstrap/bootstrap-scrollspy.js"></script>
-            <script src="scripts/bootstrap/bootstrap-collapse.js"></script>
-            <script src="scripts/bootstrap/bootstrap-tab.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="js/selectnav.js"></script>
+            <script src="js/flexslider.js"></script>
+            <script src="js/twitter.js"></script>
+            <script src="js/fancybox.js"></script>
+            <script src="js/isotope.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/switcher.js"></script>
 
         </body>
     </html>

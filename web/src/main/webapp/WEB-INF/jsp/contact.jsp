@@ -13,57 +13,72 @@
         <!-- Content -->
         <!-- Subhead
             ================================================== -->
-            <header class="jumbotron subhead">
-              <div class="container">
-                <h1>Contact Us</h1>
-                <p class="lead">Chupa chups apple pie caramels sweet roll gingerbread wafer jelly-o wafer.
-              </div>
-            </header>
+            <div class="row-fluid">
+                <img src="images/telephone.png" class="img-page-title img-rounded">
+                <div id="page-title">
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
 
-            <div class="container">
+            <div class="row-fluid">
 
-
-                <div class="span12">
-                    <div class="page-header">
-                            <h2>Send us a message</h2>
-                    </div>
+                <!-- Standard Structure -->
+                <div class="span8">
                     <p>We want to hear from you! Just enter your name, email address, and message into the form below and send away.</p>
 
-                    <p>All fields are required</p>
+                    <div id="contact-form" >
+                        <form>
+                            <fieldset>
+                                <label>Name</label>
+                                <input type="text" class="input-xlarge">
 
-                    <div class="row">
-                        <div class="span8 offset2">
-                            <div class="bs-docs-example offset3">
-                                <form class="form-horizontal">
-                                    <div class="control-group">
-                                        <label class="control-label" for="inputName">Name</label>
-                                        <div class="controls">
-                                            <input type="text" id="inputName" placeholder="Name" style="width: 92%">
-                                        </div>
-                                    </div>
+                                <label>Email</label>
+                                <input type="text" class="input-xlarge">
 
-                                    <div class="control-group">
-                                        <label class="control-label" for="inputEmail">Email</label>
-                                        <div class="controls">
-                                            <input type="text" id="inputEmail" placeholder="Email" style="width: 92%">
-                                        </div>
-                                    </div>
+                                <label>Comment</label>
+                                <textarea rows="6" class="input-xxlarge"></textarea>
 
-                                    <div class="control-group">
-                                        <label class="control-label" for="inputMessage">Message</label>
-                                        <div class="controls">
-                                            <textarea rows="5" cols="500" id="inputMessage"  style="width: 92%"></textarea>
-                                        </div>
-                                    </div>
 
-                                    <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary">Send Message</button>
-                                    </div>
 
-                                </form>
+                            </fieldset>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                </div>
+
+
+
+                <div class="span4 google-map">
+
+                    <div class="headline no-margin"><h4>Our Location</h4></div>
+
+                    <!-- Google Maps -->
+                    <div id="googlemaps" class="google-map google-map-full" style="height:250px"></div>
+
+                    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+                    <script src="js/jquery.gmap.min.js"></script>
+
+                    <script type="text/javascript">
+                        jQuery('#googlemaps').gMap({
+                            maptype: 'ROADMAP',
+                            scrollwheel: false,
+                            zoom: 13,
+                            markers: [
+                                {
+                                    address: 'Elliptical Road, Diliman, Quezon City, 1107',
+                                    html: '',
+                                    popup: false
+                                }
+
+                            ]
+
+                        });
+                    </script>
+
+                    <p>Department of Agriculture, Elliptical Road, Diliman, Quezon City, 1107</p>
 
                 </div>
 

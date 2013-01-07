@@ -16,3 +16,4 @@ core/.classpath
 web/.classpath
 *.aj
 *.DS_Store
+.idea
